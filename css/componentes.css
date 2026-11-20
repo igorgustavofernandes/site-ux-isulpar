@@ -24,23 +24,21 @@
   scrollbar-width: thin;
 }
 
-@media (max-width: 899px) {
-  .menu-abas::after {
-    content: "";
-    position: sticky;
-    right: 0;
-    z-index: 1;
-    flex: 0 0 0.6rem;
-    width: 0.6rem;
-    height: 0.6rem;
-    align-self: flex-end;
-    margin-bottom: var(--space-1);
-    margin-left: -0.6rem;
-    border-right: 2px solid var(--color-blue-700);
-    border-bottom: 2px solid var(--color-blue-700);
-    transform: rotate(-45deg);
-    pointer-events: none;
-  }
+.menu-abas.menu-abas--rolavel::after {
+  content: "";
+  position: sticky;
+  right: 0;
+  z-index: 1;
+  flex: 0 0 0.6rem;
+  width: 0.6rem;
+  height: 0.6rem;
+  align-self: flex-end;
+  margin-bottom: var(--space-1);
+  margin-left: -0.6rem;
+  border-right: 2px solid var(--color-blue-700);
+  border-bottom: 2px solid var(--color-blue-700);
+  transform: rotate(-45deg);
+  pointer-events: none;
 }
 
 .botao-aba {

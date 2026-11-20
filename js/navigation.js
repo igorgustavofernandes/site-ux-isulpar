@@ -8,12 +8,32 @@ export function scrollToTop() {
 
 export function initNavigation() {
   const tabList = document.querySelector('[role="tablist"]');
+  const skipLink = document.querySelector(".skip-link");
 
   if (!tabList) {
     return;
   }
 
   const tabs = Array.from(tabList.querySelectorAll('[role="tab"]'));
+
+  function updateSkipLink(selectedTab) {
+    if (skipLink) {
+      skipLink.href = `#${selectedTab.getAttribute("aria-controls")}`;
+    }
+  }
+
+  function updateTabListOverflow() {
+    const lastTab = tabs[tabs.length - 1];
+    const tabListRect = tabList.getBoundingClientRect();
+    const lastTabRect = lastTab.getBoundingClientRect();
+    const visibleRight = tabListRect.left + tabList.clientLeft + tabList.clientWidth;
+    const contentRight = lastTabRect.right + tabList.scrollLeft;
+
+    tabList.classList.toggle(
+      "menu-abas--rolavel",
+      contentRight > visibleRight + 1
+    );
+  }
 
   function activateTab(selectedTab) {
     tabs.forEach((tab) => {
@@ -27,8 +47,20 @@ export function initNavigation() {
       panel.classList.toggle("ativa", selected);
     });
 
+    updateSkipLink(selectedTab);
     scrollToTop();
   }
+
+  const initiallySelectedTab = tabs.find(
+    (tab) => tab.getAttribute("aria-selected") === "true"
+  );
+
+  if (initiallySelectedTab) {
+    updateSkipLink(initiallySelectedTab);
+  }
+
+  updateTabListOverflow();
+  window.addEventListener("resize", updateTabListOverflow);
 
   tabList.addEventListener("click", (event) => {
     const tab = event.target.closest('[role="tab"]');

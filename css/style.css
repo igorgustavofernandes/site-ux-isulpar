@@ -114,6 +114,16 @@ a:hover {
   line-height: 1.15;
 }
 
+.cabecalho-disciplina .assinatura-institucional {
+  margin: 0 0 var(--space-2);
+  color: #d7e8f7;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
 .cabecalho-disciplina p {
   margin: var(--space-3) 0 0;
   color: #d7e8f7;
