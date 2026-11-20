@@ -44,7 +44,6 @@ html {
 }
 
 body {
-  min-width: 20rem;
   margin: 0;
   padding: var(--space-5);
   background: var(--color-page);

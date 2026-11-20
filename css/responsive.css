@@ -11,12 +11,6 @@
     padding: var(--space-5);
   }
 
-  .menu-abas {
-    overflow-x: auto;
-    overscroll-behavior-x: contain;
-    scrollbar-width: thin;
-  }
-
   .secao-aba {
     padding-block: var(--space-4);
   }
@@ -52,6 +46,10 @@
 
   .botao-aba {
     padding-inline: var(--space-3);
+  }
+
+  .grade-pratica {
+    grid-template-columns: 1fr;
   }
 }
 
