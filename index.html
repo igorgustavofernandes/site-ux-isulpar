@@ -5,11 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Material acadêmico da disciplina de Interação Homem-Máquina do curso de Sistemas de Informação.">
   <title>Interação Homem-Máquina | Base de Conhecimento</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/componentes.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script type="module" src="js/main.js"></script>
 </head>
 
 <body>
-  <main class="conteudo" id="topo">
+  <a class="skip-link" href="#ementa">Pular para o conteúdo</a>
+
+  <div class="pagina" id="topo">
     <a href="https://guigasbr.github.io/Host_ISULPAR_ihm/" class="link-voltar">
       ← Voltar às disciplinas
     </a>
@@ -19,16 +24,24 @@
       <p>Disciplina — Base de Conhecimento Acadêmica</p>
     </header>
 
-    <nav class="menu-abas" aria-label="Seções da disciplina">
-      <button type="button" class="botao-aba ativo" aria-controls="ementa" aria-selected="true" onclick="abrirAba('ementa', this)">Ementa</button>
-      <button type="button" class="botao-aba" aria-controls="artigos" aria-selected="false" onclick="abrirAba('artigos', this)">Artigos</button>
-      <button type="button" class="botao-aba" aria-controls="cases" aria-selected="false" onclick="abrirAba('cases', this)">Cases</button>
-      <button type="button" class="botao-aba" aria-controls="videos" aria-selected="false" onclick="abrirAba('videos', this)">Vídeos</button>
-      <button type="button" class="botao-aba" aria-controls="seminarios" aria-selected="false" onclick="abrirAba('seminarios', this)">Seminários</button>
-      <button type="button" class="botao-aba" aria-controls="storytelling" aria-selected="false" onclick="abrirAba('storytelling', this)">Storytelling</button>
-    </nav>
+    <main class="conteudo" id="conteudo">
+      <nav class="menu-abas" role="tablist" aria-label="Seções da disciplina">
+        <button id="aba-ementa" type="button" class="botao-aba ativo" role="tab"
+          aria-controls="ementa" aria-selected="true" tabindex="0">Ementa</button>
+        <button id="aba-artigos" type="button" class="botao-aba" role="tab"
+          aria-controls="artigos" aria-selected="false" tabindex="-1">Artigos</button>
+        <button id="aba-cases" type="button" class="botao-aba" role="tab"
+          aria-controls="cases" aria-selected="false" tabindex="-1">Cases</button>
+        <button id="aba-videos" type="button" class="botao-aba" role="tab"
+          aria-controls="videos" aria-selected="false" tabindex="-1">Vídeos</button>
+        <button id="aba-seminarios" type="button" class="botao-aba" role="tab"
+          aria-controls="seminarios" aria-selected="false" tabindex="-1">Seminários</button>
+        <button id="aba-storytelling" type="button" class="botao-aba" role="tab"
+          aria-controls="storytelling" aria-selected="false" tabindex="-1">Storytelling</button>
+      </nav>
 
-    <section id="ementa" class="secao-aba ativa" aria-labelledby="titulo-ementa">
+    <section id="ementa" class="secao-aba ativa" role="tabpanel"
+      aria-labelledby="aba-ementa" tabindex="0">
       <h2 id="titulo-ementa">1. Ementa da Disciplina</h2>
       <p>
         Interação Homem-Máquina (IHM), também conhecida como Interação Humano-Computador (IHC),
@@ -115,10 +128,11 @@
         Homem-Máquina podem ser úteis.
       </p>
 
-      <button type="button" class="btn-topo" onclick="voltarAoTopo()">⬆ Voltar ao Topo</button>
+      <button type="button" class="btn-topo" data-action="back-to-top">⬆ Voltar ao Topo</button>
     </section>
 
-    <section id="artigos" class="secao-aba" aria-labelledby="titulo-artigos">
+    <section id="artigos" class="secao-aba" role="tabpanel"
+      aria-labelledby="aba-artigos" tabindex="0" hidden>
       <h2 id="titulo-artigos">2. Artigos Científicos e Marcos Históricos</h2>
       <p>
         Os marcos históricos e textos a seguir ajudam a compreender a evolução das interfaces
@@ -196,10 +210,11 @@
         <li>Por que as conclusões de uma inspeção podem precisar ser complementadas por testes com usuários?</li>
       </ol>
 
-      <button type="button" class="btn-topo" onclick="voltarAoTopo()">⬆ Voltar ao Topo</button>
+      <button type="button" class="btn-topo" data-action="back-to-top">⬆ Voltar ao Topo</button>
     </section>
 
-    <section id="cases" class="secao-aba" aria-labelledby="titulo-cases">
+    <section id="cases" class="secao-aba" role="tabpanel"
+      aria-labelledby="aba-cases" tabindex="0" hidden>
       <h2 id="titulo-cases">3. Case de Sucesso</h2>
       <p>
         O GOV.UK Design System é um exemplo público de sistema de design para serviços
@@ -261,10 +276,11 @@
         <p>Como uma equipe pode equilibrar consistência entre serviços e necessidades específicas das pessoas em cada contexto? <a href="https://design-system.service.gov.uk/" target="_blank" rel="noopener noreferrer">Explorar o GOV.UK Design System</a>.</p>
       </div>
 
-      <button type="button" class="btn-topo" onclick="voltarAoTopo()">⬆ Voltar ao Topo</button>
+      <button type="button" class="btn-topo" data-action="back-to-top">⬆ Voltar ao Topo</button>
     </section>
 
-    <section id="videos" class="secao-aba" aria-labelledby="titulo-videos">
+    <section id="videos" class="secao-aba" role="tabpanel"
+      aria-labelledby="aba-videos" tabindex="0" hidden>
       <h2 id="titulo-videos">4. Vídeos Educativos</h2>
       <p>
         Os materiais abaixo, publicados pelo Nielsen Norman Group e pelo W3C WAI, apresentam
@@ -318,10 +334,11 @@
         <li>Proponha como avaliar a experiência com pessoas e tecnologias assistivas relevantes.</li>
       </ol>
 
-      <button type="button" class="btn-topo" onclick="voltarAoTopo()">⬆ Voltar ao Topo</button>
+      <button type="button" class="btn-topo" data-action="back-to-top">⬆ Voltar ao Topo</button>
     </section>
 
-    <section id="seminarios" class="secao-aba" aria-labelledby="titulo-seminarios">
+    <section id="seminarios" class="secao-aba" role="tabpanel"
+      aria-labelledby="aba-seminarios" tabindex="0" hidden>
       <h2 id="titulo-seminarios">5. Registro de Seminário</h2>
 
       <div class="caixa-bloco">
@@ -385,10 +402,11 @@
         </p>
       </div>
 
-      <button type="button" class="btn-topo" onclick="voltarAoTopo()">⬆ Voltar ao Topo</button>
+      <button type="button" class="btn-topo" data-action="back-to-top">⬆ Voltar ao Topo</button>
     </section>
 
-    <section id="storytelling" class="secao-aba" aria-labelledby="titulo-storytelling">
+    <section id="storytelling" class="secao-aba" role="tabpanel"
+      aria-labelledby="aba-storytelling" tabindex="0" hidden>
       <h2 id="titulo-storytelling">6. Storytelling: Redesign de um Serviço Digital</h2>
 
       <div class="caixa-bloco">
@@ -459,31 +477,9 @@
         </ul>
       </div>
 
-      <button type="button" class="btn-topo" onclick="voltarAoTopo()">⬆ Voltar ao Topo</button>
+      <button type="button" class="btn-topo" data-action="back-to-top">⬆ Voltar ao Topo</button>
     </section>
-  </main>
-
-  <script>
-    function abrirAba(idSecao, elementoBotao) {
-      const secoes = document.querySelectorAll('.secao-aba');
-      secoes.forEach(secao => secao.classList.remove('ativa'));
-
-      const botoes = document.querySelectorAll('.botao-aba');
-      botoes.forEach(botao => {
-        botao.classList.remove('ativo');
-        botao.setAttribute('aria-selected', 'false');
-      });
-
-      document.getElementById(idSecao).classList.add('ativa');
-      elementoBotao.classList.add('ativo');
-      elementoBotao.setAttribute('aria-selected', 'true');
-
-      voltarAoTopo();
-    }
-
-    function voltarAoTopo() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-  </script>
+    </main>
+  </div>
 </body>
 </html>
