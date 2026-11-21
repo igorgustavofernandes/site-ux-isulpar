@@ -29,18 +29,16 @@
       <nav class="menu-abas" role="tablist" aria-label="Seções da disciplina">
         <button id="aba-ementa" type="button" class="botao-aba ativo" role="tab"
           aria-controls="ementa" aria-selected="true" tabindex="0">Ementa</button>
-        <button id="aba-artigos" type="button" class="botao-aba" role="tab"
-          aria-controls="artigos" aria-selected="false" tabindex="-1">Artigos</button>
+        <button id="aba-leituras" type="button" class="botao-aba" role="tab"
+          aria-controls="leituras" aria-selected="false" tabindex="-1">Leituras</button>
         <button id="aba-cases" type="button" class="botao-aba" role="tab"
           aria-controls="cases" aria-selected="false" tabindex="-1">Cases</button>
         <button id="aba-videos" type="button" class="botao-aba" role="tab"
           aria-controls="videos" aria-selected="false" tabindex="-1">Vídeos</button>
-        <button id="aba-seminarios" type="button" class="botao-aba" role="tab"
-          aria-controls="seminarios" aria-selected="false" tabindex="-1">Seminários</button>
-        <button id="aba-storytelling" type="button" class="botao-aba" role="tab"
-          aria-controls="storytelling" aria-selected="false" tabindex="-1">Storytelling</button>
         <button id="aba-pratica" type="button" class="botao-aba" role="tab"
           aria-controls="pratica" aria-selected="false" tabindex="-1">Na Prática</button>
+        <button id="aba-laboratorio" type="button" class="botao-aba" role="tab"
+          aria-controls="laboratorio" aria-selected="false" tabindex="-1">Laboratório</button>
       </nav>
 
     <section id="ementa" class="secao-aba ativa" role="tabpanel"
@@ -117,248 +115,199 @@
             <li><strong>Metodologias e projeto:</strong> PBL, Design Thinking, Design Sprint, oficinas de UX/UI e Projeto Integrador com sistemas reais.</li>
           </ul>
 
-          <h3>O que o estudante pode desenvolver?</h3>
-          <p>
-            Ao estudar IHM, o estudante pode desenvolver a capacidade de pesquisar e compreender
-            usuários, organizar informações, desenhar e prototipar interfaces e avaliar soluções
-            com base em evidências. A disciplina também incentiva o pensamento crítico, o trabalho
-            colaborativo e a consideração de usabilidade, acessibilidade, ética e inclusão na
-            concepção de sistemas interativos.
-          </p>
-
-          <h3>Possíveis Caminhos Profissionais</h3>
-          <p>
-            Os conhecimentos de IHM podem contribuir para diferentes trajetórias profissionais,
-            de acordo com a formação, a experiência e os interesses de cada pessoa.
-          </p>
-          <ul class="lista-padrao">
-            <li><strong>Design UX/UI e de interação:</strong> pesquisa, estruturação e concepção de interfaces e experiências digitais.</li>
-            <li><strong>Pesquisa com usuários:</strong> planejamento de entrevistas, observações, questionários e estudos de experiência.</li>
-            <li><strong>Avaliação de usabilidade:</strong> realização de avaliações heurísticas e testes para identificar oportunidades de melhoria.</li>
-            <li><strong>Desenvolvimento de sistemas:</strong> colaboração com equipes na criação e evolução de sites, aplicativos e sistemas interativos.</li>
-            <li><strong>Acessibilidade digital:</strong> apoio à avaliação e à melhoria de produtos e serviços para diferentes pessoas e tecnologias assistivas.</li>
-            <li><strong>Produtos e serviços digitais:</strong> participação em projetos para sistemas empresariais, serviços públicos, educação e outros setores.</li>
-          </ul>
-          <p>
-            Essas possibilidades não representam uma garantia de emprego ou uma lista definitiva
-            de profissões. São exemplos de áreas nas quais conhecimentos de Interação
-            Homem-Máquina podem ser úteis.
-          </p>
         </div>
       </details>
 
       <button type="button" class="btn-topo" data-action="back-to-top">⬆ Voltar ao Topo</button>
     </section>
 
-    <section id="artigos" class="secao-aba" role="tabpanel"
-      aria-labelledby="aba-artigos" tabindex="0" hidden>
-      <h2 id="titulo-artigos">2. Artigos Científicos e Marcos Históricos</h2>
+    <section id="leituras" class="secao-aba" role="tabpanel"
+      aria-labelledby="aba-leituras" tabindex="0" hidden>
+      <h2 id="titulo-leituras">2. Leituras para começar</h2>
       <p>
-        Os marcos históricos e textos a seguir ajudam a compreender a evolução das interfaces
-        e alguns princípios que orientam o projeto e a avaliação de sistemas interativos.
-        Consulte as fontes originais para aprofundar a leitura.
+        Experiência do usuário (UX) é a forma como uma pessoa percebe e vivencia o uso de um
+        produto ou serviço. As leituras abaixo apresentam ideias iniciais sobre UX, pesquisa
+        com pessoas e acessibilidade digital, sem exigir conhecimento prévio de IHM.
       </p>
 
       <article class="caixa-destaque">
-        <h3>Artigo 1: Direct Manipulation: A Step Beyond Programming Languages</h3>
+        <h3>Entenda o que é UX Design</h3>
         <div class="metadados-referencia">
-          <p><strong>Autor:</strong> Ben Shneiderman</p>
-          <p><strong>Publicação:</strong> 1983</p>
-          <p><strong>Área:</strong> Interação Humano-Computador e projeto de interfaces</p>
-          <p><strong>Conceito central:</strong> manipulação direta de objetos e ações representados na interface</p>
+          <p><strong>Autoria:</strong> Natan Souza</p>
+          <p><strong>Fonte:</strong> Alura</p>
+          <p><strong>Leitura estimada:</strong> 7 minutos</p>
+          <p><strong>Idioma:</strong> Português brasileiro</p>
         </div>
-
-        <details class="detalhes-conteudo">
-          <summary>Resumo e pergunta para reflexão</summary>
-          <div class="detalhes-conteudo__corpo">
-            <h4>Resumo</h4>
-            <p>
-              O artigo discute a manipulação direta como uma forma de interação em que as pessoas
-              atuam sobre representações visíveis dos objetos e ações do sistema, em vez de depender
-              somente de comandos expressos por uma linguagem de programação.
-            </p>
-            <p>
-              O trabalho descreve propriedades associadas a esse estilo de interação, como a
-              representação contínua dos objetos de interesse, ações incrementais e feedback
-              observável durante a execução das tarefas.
-            </p>
-
-            <h4>Por que esse artigo é importante?</h4>
-            <p>
-              A discussão ajuda a relacionar feedback, visibilidade e controle às experiências de
-              interação. Esses conceitos podem ser analisados em editores gráficos, mapas,
-              interfaces de organização de arquivos e outros sistemas com objetos manipuláveis.
-            </p>
-
-            <h4>Pergunta para reflexão</h4>
-            <p>Como uma interface pode tornar visíveis as ações disponíveis e os efeitos de cada ação? <a href="https://www.cs.umd.edu/~ben/papers/Shneiderman1983Direct.pdf" target="_blank" rel="noopener noreferrer" aria-label="Acessar o artigo disponibilizado pelo autor (abre em nova aba)">Acessar o artigo disponibilizado pelo autor</a>.</p>
-          </div>
-        </details>
+        <p>
+          Uma introdução à experiência de uso de produtos e serviços. O texto relaciona UX
+          à facilidade, à acessibilidade e à satisfação durante a interação.
+        </p>
+        <p>
+          <a href="https://www.alura.com.br/artigos/entenda-o-que-e-ux-design"
+            target="_blank" rel="noopener noreferrer"
+            aria-label="Ler Entenda o que é UX Design, de Natan Souza, no site da Alura (abre em nova aba)">Ler o artigo original na Alura</a>
+        </p>
       </article>
 
       <article class="caixa-destaque">
-        <h3>Artigo 2: 10 Usability Heuristics for User Interface Design</h3>
+        <h3>Pesquisa com usuários</h3>
         <div class="metadados-referencia">
-          <p><strong>Autor:</strong> Jakob Nielsen</p>
-          <p><strong>Tema:</strong> princípios gerais de usabilidade para interfaces</p>
-          <p><strong>Fonte:</strong> Nielsen Norman Group</p>
-          <p><strong>Aplicação:</strong> inspeção e avaliação heurística de interfaces</p>
+          <p><strong>Autoria:</strong> Secretaria de Governo Digital</p>
+          <p><strong>Fonte:</strong> Governo Federal</p>
+          <p><strong>Tema:</strong> compreender necessidades e dificuldades</p>
+          <p><strong>Idioma:</strong> Português brasileiro</p>
         </div>
-
-        <details class="detalhes-conteudo">
-          <summary>Resumo e pergunta para reflexão</summary>
-          <div class="detalhes-conteudo__corpo">
-            <h4>Resumo</h4>
-            <p>
-              As heurísticas de Nielsen são princípios gerais usados para inspecionar interfaces
-              e identificar possíveis problemas de usabilidade. Entre elas estão visibilidade do
-              estado do sistema, correspondência com o mundo real, controle do usuário,
-              consistência e prevenção de erros.
-            </p>
-            <p>
-              As heurísticas também tratam de reconhecimento em vez de memorização, flexibilidade,
-              design minimalista, recuperação de erros e ajuda e documentação. São orientações
-              para avaliação, não regras que substituem testes com usuários.
-            </p>
-
-            <h4>Por que esse artigo é importante?</h4>
-            <p>
-              As heurísticas oferecem uma linguagem comum para registrar problemas e discutir
-              melhorias. Na avaliação heurística, avaliadores inspecionam uma interface e
-              relacionam evidências de uso aos princípios relevantes.
-            </p>
-
-            <h4>Pergunta para reflexão</h4>
-            <p>Que problemas podem ser encontrados por uma inspeção heurística e quais precisam ser investigados com usuários? <a href="https://www.nngroup.com/articles/ten-usability-heuristics/" target="_blank" rel="noopener noreferrer" aria-label="Ler as heurísticas no Nielsen Norman Group (abre em nova aba)">Ler as heurísticas no Nielsen Norman Group</a>.</p>
-          </div>
-        </details>
+        <p>
+          A página explica como entrevistas, observação e testes de usabilidade ajudam a
+          conhecer a experiência das pessoas com serviços digitais. “Teste de usabilidade”
+          é uma atividade em que alguém realiza tarefas enquanto a equipe observa onde surgem
+          dúvidas ou dificuldades.
+        </p>
+        <p>
+          <a href="https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/pesquisa-com-usuarios"
+            target="_blank" rel="noopener noreferrer"
+            aria-label="Consultar a página Pesquisa com Usuários, do Governo Federal (abre em nova aba)">Consultar a página do Governo Federal</a>
+        </p>
       </article>
 
-      <h3>Atividade de Leitura</h3>
-      <p>Após consultar os textos, responda às questões e relacione os conceitos a uma interface conhecida.</p>
-      <ol class="lista-padrao">
-        <li>Como a manipulação direta pode ajudar uma pessoa a compreender as ações disponíveis em uma interface?</li>
-        <li>Escolha uma heurística de Nielsen e descreva um exemplo de interface em que ela seja relevante.</li>
-        <li>Que informações devem ser registradas para justificar um problema encontrado em uma avaliação heurística?</li>
-        <li>Por que as conclusões de uma inspeção podem precisar ser complementadas por testes com usuários?</li>
-      </ol>
+      <article class="caixa-destaque">
+        <h3>Acessibilidade digital</h3>
+        <div class="metadados-referencia">
+          <p><strong>Autoria:</strong> Secretaria de Governo Digital</p>
+          <p><strong>Fonte:</strong> Governo Federal</p>
+          <p><strong>Tema:</strong> barreiras em sites e serviços</p>
+          <p><strong>Idioma:</strong> Português brasileiro</p>
+        </div>
+        <p>
+          Uma explicação introdutória sobre acessibilidade digital e sobre barreiras que
+          podem impedir as pessoas de perceber, entender, navegar ou interagir com páginas
+          e serviços.
+        </p>
+        <p>
+          <a href="https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital"
+            target="_blank" rel="noopener noreferrer"
+            aria-label="Consultar a página Acessibilidade Digital, do Governo Federal (abre em nova aba)">Consultar a página do Governo Federal</a>
+        </p>
+      </article>
 
       <button type="button" class="btn-topo" data-action="back-to-top">⬆ Voltar ao Topo</button>
     </section>
 
     <section id="cases" class="secao-aba" role="tabpanel"
       aria-labelledby="aba-cases" tabindex="0" hidden>
-      <h2 id="titulo-cases">3. Cases e referências públicas</h2>
+      <h2 id="titulo-cases">3. Serviços digitais brasileiros</h2>
       <p>
-        O GOV.UK Design System é um exemplo público de sistema de design para serviços
-        digitais. Sua documentação reúne estilos, componentes reutilizáveis e padrões para
-        tarefas comuns. O case permite analisar como uma equipe pode recorrer a orientações
-        compartilhadas ao projetar interfaces para serviços.
+        Os exemplos abaixo são serviços públicos reais. Os fatos descritos vêm das páginas
+        oficiais; as relações com IHM são observações didáticas, não resultados de avaliações
+        de usabilidade.
       </p>
 
-      <div class="caixa-bloco">
-        <p class="selo-conteudo">Referência pública</p>
-        <h3>GOV.UK Design System e serviços digitais</h3>
+      <article class="caixa-bloco">
+        <p class="selo-conteudo">Governo Federal</p>
+        <h3>GOV.BR: criar uma conta para acessar serviços</h3>
+        <h4>Necessidade atendida</h4>
+        <p>
+          Quem precisa usar serviços públicos digitais pode precisar de uma conta para se
+          identificar. A página oficial informa que a conta GOV.BR permite acessar diferentes
+          serviços e que alguns deles exigem níveis de segurança distintos.
+        </p>
+        <h4>O que a página apresenta</h4>
+        <p>
+          A descrição explica para que serve a conta, informa quem pode criá-la e apresenta
+          etapas pelos canais web e aplicativo. Também explica que alguns serviços podem exigir
+          níveis Bronze, Prata ou Ouro.
+        </p>
+        <h4>O que observar em IHM</h4>
+        <p>
+          Como a página organiza os pré-requisitos, as etapas e as opções de acesso? Essas
+          informações podem ser analisadas quanto à clareza, ao reconhecimento das opções e à
+          prevenção de surpresas durante uma tarefa.
+        </p>
+        <h4>Pergunta para reflexão</h4>
+        <p>
+          Antes de iniciar a criação de uma conta, que informações ajudariam você a entender
+          o que será necessário e qual serviço poderá acessar?
+          <a href="https://www.gov.br/pt-br/servicos/criar-sua-conta-gov.br"
+            target="_blank" rel="noopener noreferrer"
+            aria-label="Consultar a página oficial para criar uma conta GOV.BR (abre em nova aba)">Consultar a página oficial do serviço</a>.
+        </p>
+      </article>
 
-        <h4>O problema inicial</h4>
+      <article class="caixa-bloco">
+        <p class="selo-conteudo">Serviço estadual de São Paulo</p>
+        <h3>Poupatempo SP.GOV.BR: encontrar serviços</h3>
+        <h4>Necessidade atendida</h4>
         <p>
-          Serviços digitais diferentes podem apresentar formulários, navegação e instruções
-          de maneiras inconsistentes. Para quem usa mais de um serviço, essas diferenças podem
-          dificultar o reconhecimento de padrões e a compreensão do que fazer.
+          Uma pessoa pode precisar localizar um serviço estadual sem saber previamente qual
+          órgão é responsável ou qual é o nome exato do serviço.
         </p>
+        <h4>O que o portal apresenta</h4>
         <p>
-          No estudo deste case, o desafio é investigar como orientações compartilhadas podem
-          apoiar equipes que criam ou atualizam serviços, sem presumir resultados de
-          usabilidade que não estejam documentados.
+          A página inicial oferece caminhos por serviços mais acessados, assuntos e órgãos.
+          Ela também informa que o aplicativo permite, entre outras ações, agendar serviços,
+          assinar documentos e receber atendimento em Libras.
         </p>
+        <h4>O que observar em IHM</h4>
+        <p>
+          Categorias por assunto, atalhos e lista de órgãos são formas diferentes de organizar
+          a navegação. Podemos observar como esses caminhos podem apoiar o reconhecimento sem
+          presumir que todas as pessoas encontrarão o que procuram com facilidade.
+        </p>
+        <h4>Pergunta para reflexão</h4>
+        <p>
+          Se você não soubesse qual órgão oferece um serviço, qual caminho tentaria primeiro?
+          Que informação ajudaria a confirmar que encontrou a opção certa?
+          <a href="https://www.poupatempo.sp.gov.br/"
+            target="_blank" rel="noopener noreferrer"
+            aria-label="Explorar o portal oficial do Poupatempo SP.GOV.BR (abre em nova aba)">Explorar o portal oficial</a>.
+        </p>
+      </article>
 
-        <h4>A solução tecnológica</h4>
-        <p>
-          O GOV.UK Design System disponibiliza diretrizes de estilos, componentes e padrões
-          para tarefas recorrentes, acompanhados de documentação de uso.
-        </p>
-        <p>
-          Componentes e padrões documentados podem servir de referência para estruturar
-          interfaces e manter convenções consistentes entre serviços. A adequação de cada
-          escolha ainda depende das necessidades e do contexto das pessoas usuárias.
-        </p>
-
-        <h4>O que a documentação permite observar</h4>
-        <p>
-          A documentação pública permite consultar exemplos de componentes, orientações de
-          estilo e padrões de tarefas em um único sistema de referência.
-        </p>
-        <p>
-          Esses materiais podem ser examinados para entender como elementos de interface são
-          descritos e como equipes são orientadas a utilizá-los.
-        </p>
-        <p>
-          Esta apresentação não atribui ao case métricas de impacto ou resultados de testes
-          que não estejam informados nas fontes consultadas. Avaliações de eficácia devem
-          recorrer a evidências apropriadas.
-        </p>
-
-        <h4>O que esse case ensina?</h4>
-        <ul class="lista-padrao">
-          <li>Documentação ajuda equipes a compreender como e quando utilizar componentes e padrões.</li>
-          <li>Consistência pode ser planejada por meio de orientações compartilhadas.</li>
-          <li>Componentes padronizados ainda precisam atender ao contexto e às necessidades das pessoas.</li>
-          <li>Testes e avaliações são necessários para verificar se uma interface funciona bem para seus usuários.</li>
-        </ul>
-
-        <h4>Questão para discussão</h4>
-        <p>Como uma equipe pode equilibrar consistência entre serviços e necessidades específicas das pessoas em cada contexto? <a href="https://design-system.service.gov.uk/" target="_blank" rel="noopener noreferrer" aria-label="Explorar o GOV.UK Design System (abre em nova aba)">Explorar o GOV.UK Design System</a>.</p>
-      </div>
-
+      <button type="button" class="botao-acao" data-tab-target="aba-laboratorio">
+        Explorar o Laboratório de IHC
+      </button>
       <button type="button" class="btn-topo" data-action="back-to-top">⬆ Voltar ao Topo</button>
     </section>
 
     <section id="videos" class="secao-aba" role="tabpanel"
       aria-labelledby="aba-videos" tabindex="0" hidden>
-      <h2 id="titulo-videos">4. Vídeos Educativos</h2>
+      <h2 id="titulo-videos">4. Vídeos em português</h2>
       <p>
-        Os materiais abaixo, publicados pelo Nielsen Norman Group e pelo W3C WAI, apresentam
-        recomendações de usabilidade e acessibilidade para interfaces digitais.
+        Selecionamos vídeos introdutórios com explicações em português e duração curta.
+        Os links levam aos vídeos publicados no YouTube; a disponibilidade pode mudar.
       </p>
 
-      <div class="caixa-bloco">
-        <h3>Vídeo 1: 6 Tips for Better Tabs</h3>
-        <p><strong>Fonte:</strong> Nielsen Norman Group</p>
-        <p><strong>Tema:</strong> projeto e apresentação de controles de abas</p>
-        <p><a href="https://www.nngroup.com/videos/6-tips-for-better-tabs/" target="_blank" rel="noopener noreferrer" aria-label="Assistir ao vídeo na página do Nielsen Norman Group (abre em nova aba)">Assistir ao vídeo na página do Nielsen Norman Group</a></p>
-
-        <h4>Resumo</h4>
+      <article class="caixa-bloco">
+        <h3>O que é UX | User Experience?</h3>
+        <p><strong>Canal:</strong> UXNOW / Daniel Furtado</p>
+        <p><strong>Duração:</strong> 6 minutos e 10 segundos</p>
+        <p><strong>Idioma verificado:</strong> português brasileiro</p>
         <p>
-          O vídeo apresenta recomendações para controles de abas, incluindo indicação clara
-          da aba selecionada, visibilidade, relação entre rótulos e conteúdo e quantidade
-          adequada de opções.
+          Uma introdução à experiência do usuário, com exemplos de como a relação com
+          produtos e serviços vai além da aparência de uma tela.
         </p>
         <p>
-          Ao assistir, observe como a organização das abas ajuda as pessoas a entender onde
-          estão e qual conteúdo será apresentado ao selecionar uma opção.
+          <a href="https://www.youtube.com/watch?v=WAi6ixIfdd4"
+            target="_blank" rel="noopener noreferrer"
+            aria-label="Assistir ao vídeo O que é UX, do canal UXNOW, no YouTube (abre em nova aba)">Assistir ao vídeo no YouTube</a>
         </p>
-      </div>
+      </article>
 
-      <div class="caixa-bloco">
-        <h3>Vídeo 2: Web Accessibility Perspectives</h3>
-        <p><strong>Fonte:</strong> W3C Web Accessibility Initiative (WAI)</p>
-        <p><strong>Tema:</strong> exemplos de acessibilidade em experiências na Web</p>
-        <p><a href="https://www.w3.org/WAI/perspective-videos/" target="_blank" rel="noopener noreferrer" aria-label="Assistir à série de vídeos no W3C WAI (abre em nova aba)">Assistir à série de vídeos no W3C WAI</a></p>
-
-        <h4>Resumo</h4>
+      <article class="caixa-bloco">
+        <h3>Acessibilidade na Web: por onde começar</h3>
+        <p><strong>Canal:</strong> Eduardo Corrêa</p>
+        <p><strong>Duração:</strong> 5 minutos e 39 segundos</p>
+        <p><strong>Idioma verificado:</strong> português brasileiro</p>
         <p>
-          A série apresenta perspectivas sobre navegação por teclado, contraste de cores,
-          estrutura clara, leitores de tela, legendas, texto ajustável e outros aspectos da
-          acessibilidade.
+          Apresenta quatro princípios de acessibilidade na Web e sugere pontos iniciais
+          para observar em projetos digitais.
         </p>
         <p>
-          Os vídeos relacionam recursos de acessibilidade às situações em que pessoas com
-          diferentes habilidades utilizam serviços e conteúdos digitais.
+          <a href="https://www.youtube.com/watch?v=KGcnn9SDeQs"
+            target="_blank" rel="noopener noreferrer"
+            aria-label="Assistir ao vídeo Acessibilidade na Web: por onde começar, de Eduardo Corrêa, no YouTube (abre em nova aba)">Assistir ao vídeo no YouTube</a>
         </p>
-
-        <h4>Questão para reflexão</h4>
-        <p>Que barreiras cada recurso apresentado pode reduzir, e como verificar se ele funciona para as pessoas que dependem dele?</p>
-      </div>
+      </article>
 
       <h3>Atividade após os vídeos</h3>
       <ol class="lista-padrao">
@@ -371,167 +320,9 @@
       <button type="button" class="btn-topo" data-action="back-to-top">⬆ Voltar ao Topo</button>
     </section>
 
-    <section id="seminarios" class="secao-aba" role="tabpanel"
-      aria-labelledby="aba-seminarios" tabindex="0" hidden>
-      <h2 id="titulo-seminarios">5. Seminários e propostas de discussão</h2>
-
-      <div class="caixa-bloco">
-        <p class="selo-conteudo">Proposta de tema — não é registro de atividade realizada</p>
-        <h3>Tema sugerido: Acessibilidade, ética e autonomia nas interfaces</h3>
-
-        <h4>Contextualização</h4>
-        <p>
-          Interfaces digitais podem facilitar o acesso a informações e serviços, mas também
-          criar barreiras quando não consideram diferentes habilidades, tecnologias e
-          contextos de uso.
-        </p>
-        <p>
-          Decisões sobre coleta de dados, consentimento e apresentação de escolhas afetam a
-          autonomia e a privacidade. Padrões que pressionam ou induzem as pessoas a agir
-          contra seus interesses são discutidos como dark patterns.
-        </p>
-
-        <h4>Objetivo do seminário</h4>
-        <p>
-          Discutir como Design Universal, diretrizes WCAG, tecnologias assistivas e princípios
-          éticos podem orientar interfaces inclusivas, respeitosas com a privacidade e
-          compatíveis com a autonomia das pessoas.
-        </p>
-
-        <details class="detalhes-conteudo">
-          <summary>Ver roteiro, perguntas e orientações para registro</summary>
-          <div class="detalhes-conteudo__corpo">
-            <h4>Roteiro da apresentação</h4>
-            <ol class="lista-padrao">
-              <li><strong>Introdução:</strong> apresentar o tema e explicar sua relação com IHM.</li>
-              <li><strong>Acessibilidade:</strong> discutir Design Universal, WCAG e exemplos de tecnologias assistivas.</li>
-              <li><strong>Ética e privacidade:</strong> analisar decisões de coleta, consentimento e uso de dados.</li>
-              <li><strong>Dark patterns:</strong> identificar padrões que podem limitar a escolha ou induzir ações.</li>
-              <li><strong>Inteligência Artificial:</strong> discutir transparência, controle e uso responsável de IA em interfaces.</li>
-              <li><strong>Exemplos e debate:</strong> analisar interfaces com base em fontes e evidências identificáveis.</li>
-              <li><strong>Conclusão:</strong> sintetizar princípios que podem orientar decisões de projeto.</li>
-            </ol>
-
-            <h4>Síntese das discussões</h4>
-            <p>
-              O registro desta seção deve ser preenchido após a realização do seminário. Inclua
-              os argumentos apresentados, as fontes consultadas e os exemplos efetivamente
-              discutidos pela turma.
-            </p>
-            <p>
-              Ao registrar a síntese, relacione as propostas do seminário aos conceitos da
-              disciplina e diferencie evidências consultadas de opiniões ou hipóteses.
-            </p>
-
-            <h4>Perguntas para debate</h4>
-            <ul class="lista-padrao">
-              <li>Como verificar se uma interface pode ser utilizada por pessoas com diferentes habilidades?</li>
-              <li>Que informações devem ser oferecidas para que uma pessoa compreenda e controle o uso de seus dados?</li>
-              <li>Como reconhecer quando uma escolha de design se torna um dark pattern?</li>
-              <li>Que limites e mecanismos de controle são importantes ao incluir IA em uma interface?</li>
-              <li>Como envolver pessoas afetadas nas decisões de acessibilidade e privacidade?</li>
-            </ul>
-
-            <h4>Conclusão do seminário</h4>
-            <p>
-              Após a apresentação, registre os principais aprendizados e as questões que
-              permaneceram em aberto. Não atribua conclusões ou falas à turma antes da realização
-              da atividade.
-            </p>
-          </div>
-        </details>
-      </div>
-
-      <button type="button" class="btn-topo" data-action="back-to-top">⬆ Voltar ao Topo</button>
-    </section>
-
-    <section id="storytelling" class="secao-aba" role="tabpanel"
-      aria-labelledby="aba-storytelling" tabindex="0" hidden>
-      <h2 id="titulo-storytelling">6. Storytelling: cenário hipotético de redesign</h2>
-
-      <div class="caixa-bloco">
-        <p class="selo-conteudo">Cenário didático hipotético</p>
-        <ol class="sequencia-storytelling">
-          <li>
-            <h3>Contexto — uma tarefa importante</h3>
-            <p>
-              Imagine, como exemplo didático hipotético, uma equipe que recebe o desafio de
-              melhorar a interface de um serviço público digital. Pessoas precisam encontrar
-              informações e concluir uma solicitação, mas a equipe ainda não sabe quais etapas
-              causam dificuldade nem quais recursos de acessibilidade são necessários.
-            </p>
-            <p>
-              Antes de propor mudanças, a equipe precisa compreender quem utiliza o serviço, quais
-              tarefas realiza e em que condições acessa a interface.
-            </p>
-          </li>
-          <li>
-            <h3>Conflito — projetar sem conhecer as necessidades</h3>
-            <p>
-              Uma solução desenhada somente a partir de suposições pode usar termos pouco claros,
-              esconder informações importantes ou dificultar a navegação por teclado e tecnologias
-              assistivas.
-            </p>
-            <p>
-              A equipe deve investigar necessidades e obstáculos sem tratar uma única experiência
-              como representativa de todas as pessoas.
-            </p>
-          </li>
-          <li>
-            <h3>Decisão — pesquisar e prototipar</h3>
-            <p>
-              A equipe planeja entrevistas e observações, organiza o que aprendeu em jornadas e
-              estrutura a arquitetura da informação e os fluxos de navegação.
-            </p>
-            <p>
-              Wireframes, mockups e protótipos navegáveis permitem explorar alternativas. A equipe
-              considera affordance, feedback, consistência, prevenção de erros e acessibilidade
-              antes de implementar a solução.
-            </p>
-          </li>
-          <li>
-            <h3>Resultado — avaliar antes de concluir</h3>
-            <p>
-              Em testes de usabilidade, participantes realizam tarefas representativas enquanto a
-              equipe observa dificuldades, erros e dúvidas. Eficácia, eficiência e satisfação
-              orientam a análise junto às observações qualitativas.
-            </p>
-            <p>
-              Como este é um cenário hipotético, nenhum resultado de pesquisa é presumido. Uma
-              equipe real precisaria registrar os achados, revisar o protótipo e testar novamente
-              para verificar se as mudanças atenderam às necessidades identificadas.
-            </p>
-          </li>
-          <li>
-            <h3>Aprendizado</h3>
-            <p>
-              O processo ilustra como o Design Centrado no Usuário conecta investigação,
-              concepção, prototipagem e avaliação. As decisões são revistas à medida que a equipe
-              aprende sobre as pessoas e o contexto de uso.
-            </p>
-            <p>
-              Acessibilidade, ética, privacidade e autonomia devem ser consideradas durante todo
-              o projeto, e não apenas como verificações finais.
-            </p>
-          </li>
-        </ol>
-
-        <h3>Questões para reflexão</h3>
-        <ul class="lista-padrao">
-          <li>Que métodos ajudariam a compreender as necessidades das pessoas que usam o serviço?</li>
-          <li>Como a equipe incluiria pessoas com diferentes habilidades e tecnologias assistivas na avaliação?</li>
-          <li>Que evidências seriam necessárias para afirmar que o redesign melhorou a experiência?</li>
-          <li>Como evitar dark patterns e proteger privacidade e autonomia durante a interação?</li>
-          <li>Que mudanças seriam priorizadas se os testes revelassem problemas diferentes entre participantes?</li>
-        </ul>
-      </div>
-
-      <button type="button" class="btn-topo" data-action="back-to-top">⬆ Voltar ao Topo</button>
-    </section>
-
     <section id="pratica" class="secao-aba" role="tabpanel"
       aria-labelledby="aba-pratica" tabindex="0" hidden>
-      <h2 id="titulo-pratica">7. Na Prática: do conceito à aplicação</h2>
+      <h2 id="titulo-pratica">5. Na Prática: do conceito à aplicação</h2>
       <p>
         Os conceitos de IHM orientam etapas de investigação, concepção e avaliação.
         A sequência abaixo resume práticas estudadas na disciplina; não descreve projetos
@@ -595,9 +386,452 @@
         todo o processo, não apenas na avaliação final.
       </p>
 
+      <button type="button" class="botao-acao" data-tab-target="aba-laboratorio">
+        Aplicar os conceitos no Laboratório de IHC
+      </button>
       <button type="button" class="btn-topo" data-action="back-to-top">⬆ Voltar ao Topo</button>
     </section>
+
+    <section id="laboratorio" class="secao-aba" data-laboratorio role="tabpanel"
+      aria-labelledby="aba-laboratorio" tabindex="0" hidden>
+      <h2 id="titulo-laboratorio">6. Laboratório de IHC</h2>
+      <p>
+        Percorra uma missão didática sobre como solicitar uma segunda chamada em um
+        portal acadêmico fictício. Você identificará problemas, escolherá melhorias e
+        testará uma versão aprimorada do formulário.
+      </p>
+
+      <div class="caixa-destaque">
+        <h3>Simulação local</h3>
+        <p>
+          O portal e os dados desta atividade são fictícios. Nenhuma solicitação é
+          enviada, e nenhum dado é salvo. Use apenas informações de exemplo; não informe
+          dados pessoais.
+        </p>
+      </div>
+
+      <ol class="progresso-laboratorio" aria-label="Etapas do Laboratório de IHC">
+        <li data-lab-progress="missao" aria-current="step">1. Missão</li>
+        <li data-lab-progress="diagnostico">2. Diagnóstico</li>
+        <li data-lab-progress="decisoes">3. Decisões</li>
+        <li data-lab-progress="formulario">4. Nova interface</li>
+        <li data-lab-progress="resultado">5. Resultado</li>
+      </ol>
+
+      <p class="nota-conteudo" data-lab-status role="status" aria-live="polite" aria-atomic="true">
+        Fase 1 de 5: missão.
+      </p>
+
+      <section class="caixa-bloco etapa-laboratorio" data-lab-phase="missao"
+        aria-labelledby="lab-titulo-missao">
+        <p class="selo-conteudo">Fase 1 — Missão</p>
+        <h3 id="lab-titulo-missao" data-lab-heading tabindex="-1">Solicitação de segunda chamada</h3>
+        <p>
+          Na semana de avaliações, uma estudante fictícia percebe que não compareceu a
+          uma prova e precisa registrar um pedido de segunda chamada no portal da
+          instituição. Ela quer saber quais informações fornecer e se o pedido foi
+          recebido.
+        </p>
+        <p>
+          Sua missão é investigar a interface, justificar o que encontrou, escolher
+          melhorias e observar como elas mudam a experiência. Este cenário não descreve
+          um caso real nem uma regra acadêmica do ISULPAR.
+        </p>
+        <div class="caixa-destaque regras-laboratorio">
+          <h4>Regras fictícias deste exercício</h4>
+          <ul class="lista-padrao">
+            <li>Disciplina, avaliação e justificativa são necessárias para a simulação.</li>
+            <li>O anexo é opcional; os exemplos aceitos neste cenário são PDF, PNG e JPG.</li>
+            <li>Não há prazo, motivo elegível ou procedimento institucional sendo afirmado.</li>
+          </ul>
+          <p>Essas regras foram criadas apenas para a atividade e não representam políticas oficiais.</p>
+        </div>
+        <button type="button" class="botao-acao" data-lab-next>
+          Investigar o formulário
+        </button>
+      </section>
+
+      <section class="caixa-bloco etapa-laboratorio" data-lab-phase="diagnostico"
+        aria-labelledby="lab-titulo-diagnostico" hidden>
+        <p class="selo-conteudo">Fase 2 — Diagnóstico</p>
+        <h3 id="lab-titulo-diagnostico" data-lab-heading tabindex="-1">Investigue as evidências</h3>
+        <p>
+          Explore o mockup por teclado ou ponteiro. Os controles têm rótulos associados e
+          não enviam dados; alguns textos e orientações são deliberadamente pouco claros.
+          Depois, classifique as evidências e explique brevemente sua interpretação.
+        </p>
+
+        <div class="laboratorio-mockup" aria-labelledby="lab-mockup-titulo">
+          <h4 id="lab-mockup-titulo">Portal acadêmico — nova solicitação</h4>
+          <form class="formulario-laboratorio formulario-problematico" data-lab-original-form novalidate>
+            <div class="campo-laboratorio">
+              <label for="lab-original-disciplina">Tipo</label>
+              <select id="lab-original-disciplina" name="disciplina" required>
+                <option value="">Selecione</option>
+                <option value="disciplina-a">Disciplina simulada A</option>
+                <option value="disciplina-b">Disciplina simulada B</option>
+              </select>
+            </div>
+            <div class="campo-laboratorio">
+              <label for="lab-original-avaliacao">Referência</label>
+              <select id="lab-original-avaliacao" name="avaliacao" required>
+                <option value="">Selecione</option>
+                <option value="avaliacao-1">Avaliação simulada 1</option>
+                <option value="avaliacao-2">Avaliação simulada 2</option>
+              </select>
+            </div>
+            <div class="campo-laboratorio">
+              <label for="lab-original-justificativa">Motivo</label>
+              <textarea id="lab-original-justificativa" name="justificativa" rows="3" required></textarea>
+            </div>
+            <div class="campo-laboratorio">
+              <label for="lab-original-anexo">Anexo</label>
+              <input id="lab-original-anexo" name="anexo" type="file">
+            </div>
+            <button type="button" class="botao-secundario" data-lab-original-submit>
+              Tentar solicitar (simulação)
+            </button>
+          </form>
+          <p class="nota-conteudo" data-lab-original-observation role="status"
+            aria-live="polite" hidden></p>
+        </div>
+
+        <form class="diagnostico-laboratorio" data-lab-diagnosis-form>
+          <fieldset>
+            <legend>Quais evidências podem dificultar a tarefa?</legend>
+            <p>Marque apenas as observações que você considera uma barreira. Há também características que podem estar adequadas.</p>
+            <label><input type="checkbox" name="lab-diagnostico" value="rotulos"> “Tipo” e “Referência” não deixam claro qual dado deve ser escolhido.</label>
+            <label><input type="checkbox" name="lab-diagnostico" value="instrucoes"> Não há orientação sobre o que escrever no campo de motivo.</label>
+            <label><input type="checkbox" name="lab-diagnostico" value="obrigatorios"> A regra exige alguns campos, mas o mockup não os indica visualmente como obrigatórios.</label>
+            <label><input type="checkbox" name="lab-diagnostico" value="anexo"> O campo de anexo não informa os formatos aceitos pela regra do exercício.</label>
+            <label><input type="checkbox" name="lab-diagnostico" value="feedback"> Depois de tentar solicitar, o portal não confirma o que ocorreu.</label>
+            <label><input type="checkbox" name="lab-diagnostico" value="ordem"> A ordem disciplina, avaliação, motivo e anexo acompanha a tarefa descrita.</label>
+            <label><input type="checkbox" name="lab-diagnostico" value="anexo-opcional"> O anexo ser opcional está de acordo com as regras fictícias.</label>
+          </fieldset>
+
+          <div class="campo-laboratorio">
+            <label for="lab-diagnostico-justificativa">Qual evidência pesa mais para você e por quê?</label>
+            <textarea id="lab-diagnostico-justificativa" name="interpretacao" rows="4"
+              maxlength="500" required
+              aria-describedby="lab-diagnostico-ajuda lab-diagnostico-contagem lab-diagnostico-erro"></textarea>
+            <small id="lab-diagnostico-ajuda">
+              Explique brevemente a relação entre a evidência e a tarefa. Não inclua dados pessoais.
+              Limite: 500 caracteres.
+            </small>
+            <small><span id="lab-diagnostico-contagem" data-lab-diagnosis-count aria-live="off">500 caracteres restantes.</span></small>
+            <span class="texto-acessivel" data-lab-diagnosis-count-announcement
+              aria-live="polite" aria-atomic="true"></span>
+            <small class="erro-campo-laboratorio" id="lab-diagnostico-erro"></small>
+          </div>
+
+          <button type="button" class="botao-acao" data-lab-check-diagnosis>
+            Rever minhas observações
+          </button>
+        </form>
+
+        <section class="feedback-laboratorio" data-lab-diagnosis-feedback
+          aria-labelledby="lab-diagnostico-feedback-titulo" hidden>
+          <h4 id="lab-diagnostico-feedback-titulo" tabindex="-1">Leitura das evidências</h4>
+          <p data-lab-diagnosis-summary></p>
+          <div class="grade-pratica">
+            <div>
+              <h5>Evidências reconhecidas</h5>
+              <ul class="lista-padrao" data-lab-diagnosis-identified></ul>
+            </div>
+            <div>
+              <h5>Para reconsiderar</h5>
+              <ul class="lista-padrao" data-lab-diagnosis-review></ul>
+            </div>
+            <div>
+              <h5>Características compatíveis com as regras</h5>
+              <ul class="lista-padrao" data-lab-diagnosis-valid></ul>
+            </div>
+          </div>
+          <p><strong>Sua interpretação:</strong> <span data-lab-diagnosis-rationale></span></p>
+        </section>
+
+        <div class="acoes-laboratorio">
+          <button type="button" class="botao-secundario" data-lab-previous>Voltar à missão</button>
+          <button type="button" class="botao-acao" data-lab-next disabled>Construir uma proposta</button>
+        </div>
+      </section>
+
+      <section class="caixa-bloco etapa-laboratorio" data-lab-phase="decisoes"
+        aria-labelledby="lab-titulo-decisoes" hidden>
+        <p class="selo-conteudo">Fase 3 — Decisões</p>
+        <h3 id="lab-titulo-decisoes" data-lab-heading tabindex="-1">Construa uma proposta de interface</h3>
+        <p>
+          Compare alternativas plausíveis. Algumas resolvem o problema de maneira mais
+          direta; outras economizam espaço ou etapas, mas deixam uma limitação. Nenhuma
+          escolha é avaliada como nota.
+        </p>
+
+        <form class="decisoes-laboratorio" data-lab-decisions-form>
+          <fieldset data-lab-decision="rotulos" tabindex="-1">
+            <legend>Rótulos — que informação deve aparecer no próprio campo?</legend>
+            <label><input type="radio" name="lab-decisao-rotulos" value="especificos"> Trocar “Tipo” e “Referência” por “Disciplina” e “Avaliação”, mantendo exemplos no texto de apoio.</label>
+            <label><input type="radio" name="lab-decisao-rotulos" value="contexto"> Manter rótulos curtos e acrescentar uma explicação associada logo abaixo de cada controle.</label>
+          </fieldset>
+          <fieldset data-lab-decision="obrigatorios" tabindex="-1">
+            <legend>Campos necessários — onde indicar o que é obrigatório?</legend>
+            <label><input type="radio" name="lab-decisao-obrigatorios" value="por-campo"> Marcar cada campo necessário e manter o estado obrigatório no controle.</label>
+            <label><input type="radio" name="lab-decisao-obrigatorios" value="resumo"> Apresentar no início uma frase que liste os campos necessários e mantenha essa regra consistente.</label>
+          </fieldset>
+          <fieldset data-lab-decision="anexo" tabindex="-1">
+            <legend>Anexo — quando e onde explicar os formatos?</legend>
+            <label><input type="radio" name="lab-decisao-anexo" value="junto"> Informar PDF, PNG e JPG junto ao controle e verificar a extensão quando o arquivo for escolhido.</label>
+            <label><input type="radio" name="lab-decisao-anexo" value="regras"> Manter os formatos na área de regras e verificar a extensão quando a pessoa revisar o pedido.</label>
+          </fieldset>
+          <fieldset data-lab-decision="erros" tabindex="-1">
+            <legend>Erros — como ajudar a localizar e corrigir um problema?</legend>
+            <label><input type="radio" name="lab-decisao-erros" value="campo-e-resumo"> Mostrar a orientação junto ao campo e um resumo com links para os campos que precisam de atenção.</label>
+            <label><input type="radio" name="lab-decisao-erros" value="resumo-com-links"> Mostrar um resumo com descrição e links que levam diretamente aos campos afetados.</label>
+          </fieldset>
+          <fieldset data-lab-decision="feedback" tabindex="-1">
+            <legend>Fluxo e confirmação — uma etapa ou revisão separada?</legend>
+            <label><input type="radio" name="lab-decisao-feedback" value="revisao"> Indicar a etapa e permitir revisar os dados antes da confirmação simulada.</label>
+            <label><input type="radio" name="lab-decisao-feedback" value="pagina-unica"> Manter tudo em uma página e apresentar uma confirmação clara após a validação, sem uma etapa de revisão separada.</label>
+          </fieldset>
+          <button type="button" class="botao-acao" data-lab-check-decisions>
+            Analisar consequências e referências
+          </button>
+        </form>
+
+        <section class="comparacao-laboratorio" aria-labelledby="lab-comparacao-titulo">
+          <h4 id="lab-comparacao-titulo">Prévia comparativa — a proposta muda com suas escolhas</h4>
+          <p>
+            As prévias são componentes HTML, não imagens. Use Tab para alcançar cada versão;
+            as escolhas acima atualizam o conteúdo sem mover o foco.
+          </p>
+          <div class="grade-comparacao">
+            <section class="previsao-interface" role="region" tabindex="0"
+              aria-labelledby="lab-previa-original-titulo">
+              <p class="selo-conteudo">Original</p>
+              <h5 id="lab-previa-original-titulo">Formulário do mockup</h5>
+              <div class="interface-previa">
+                <div class="campo-previa">
+                  <label for="lab-previa-original-tipo">Tipo</label>
+                  <input id="lab-previa-original-tipo" type="text"
+                    value="Disciplina simulada A ou B" readonly>
+                </div>
+                <div class="campo-previa">
+                  <label for="lab-previa-original-referencia">Referência</label>
+                  <input id="lab-previa-original-referencia" type="text"
+                    value="Avaliação simulada 1 ou 2" readonly>
+                </div>
+                <div class="campo-previa">
+                  <label for="lab-previa-original-motivo">Motivo</label>
+                  <textarea id="lab-previa-original-motivo" rows="3" readonly>Digite aqui…</textarea>
+                </div>
+                <div class="campo-previa">
+                  <label for="lab-previa-original-anexo">Anexo</label>
+                  <input id="lab-previa-original-anexo" type="text" value="Escolher arquivo" readonly>
+                </div>
+                <div class="mensagem-previa">
+                  Se houver erro, o mockup não identifica o campo nem oferece orientação de correção.
+                </div>
+              </div>
+              <p class="estado-previa">Sem orientação de formato ou confirmação visível após tentar solicitar.</p>
+            </section>
+
+            <section class="previsao-interface previsao-interface--nova" data-lab-preview
+              role="region" tabindex="0" aria-labelledby="lab-previa-nova-titulo">
+              <p class="selo-conteudo">Proposta da equipe</p>
+              <h5 id="lab-previa-nova-titulo">Versão configurada pelas decisões</h5>
+              <p class="nota-conteudo">Prévia demonstrativa; os campos abaixo são somente para leitura.</p>
+              <div class="interface-previa" data-lab-preview-form>
+                <p class="estado-previa" data-lab-preview-progress>Aguardando decisões sobre o fluxo.</p>
+                <p class="orientacao-previa" data-lab-preview-required-summary>O mockup não informa quais campos são obrigatórios.</p>
+                <div class="campo-previa">
+                  <label for="lab-previa-disciplina"><span data-lab-preview-label="disciplina">Tipo</span><span data-lab-preview-required="disciplina"></span></label>
+                  <input id="lab-previa-disciplina" type="text" value="Disciplina simulada A ou B" readonly
+                    aria-describedby="lab-previa-disciplina-ajuda">
+                  <small id="lab-previa-disciplina-ajuda" data-lab-preview-help="disciplina">Rótulo original do mockup.</small>
+                </div>
+                <div class="campo-previa">
+                  <label for="lab-previa-avaliacao"><span data-lab-preview-label="avaliacao">Referência</span><span data-lab-preview-required="avaliacao"></span></label>
+                  <input id="lab-previa-avaliacao" type="text" value="Avaliação simulada 1 ou 2" readonly
+                    aria-describedby="lab-previa-avaliacao-ajuda">
+                  <small id="lab-previa-avaliacao-ajuda" data-lab-preview-help="avaliacao">Rótulo original do mockup.</small>
+                </div>
+                <div class="campo-previa">
+                  <label for="lab-previa-justificativa">Motivo<span data-lab-preview-required="justificativa"></span></label>
+                  <textarea id="lab-previa-justificativa" rows="3" readonly
+                    aria-describedby="lab-previa-justificativa-ajuda">Digite aqui…</textarea>
+                  <small id="lab-previa-justificativa-ajuda" data-lab-preview-help="justificativa">Sem instrução sobre o que escrever.</small>
+                </div>
+                <div class="campo-previa">
+                  <label for="lab-previa-anexo">Anexo</label>
+                  <input id="lab-previa-anexo" type="text" value="Escolher arquivo" readonly
+                    aria-describedby="lab-previa-anexo-ajuda">
+                  <small id="lab-previa-anexo-ajuda" data-lab-preview-help="anexo">Formatos não informados.</small>
+                </div>
+                <div class="mensagem-previa" data-lab-preview-errors>
+                  Erro de exemplo: nenhuma orientação de correção é apresentada.
+                </div>
+                <p class="estado-previa" data-lab-preview-confirmation>
+                  Nenhuma confirmação visível após tentar solicitar.
+                </p>
+              </div>
+              <ul class="lista-padrao detalhes-previa">
+                <li><span data-lab-preview-value="rotulos">Rótulos: aguardando decisão.</span><small data-lab-preview-limit="rotulos"></small></li>
+                <li><span data-lab-preview-value="obrigatorios">Obrigatoriedade: aguardando decisão.</span><small data-lab-preview-limit="obrigatorios"></small></li>
+                <li><span data-lab-preview-value="anexo">Anexo: aguardando decisão.</span><small data-lab-preview-limit="anexo"></small></li>
+                <li><span data-lab-preview-value="erros">Erros: aguardando decisão.</span><small data-lab-preview-limit="erros"></small></li>
+                <li><span data-lab-preview-value="feedback">Fluxo: aguardando decisão.</span><small data-lab-preview-limit="feedback"></small></li>
+              </ul>
+            </section>
+          </div>
+          <p class="status-previa" data-lab-preview-status role="status" aria-live="polite">
+            Nenhuma decisão aplicada à prévia ainda.
+          </p>
+        </section>
+
+        <section class="feedback-laboratorio" data-lab-decision-feedback
+          aria-labelledby="lab-decision-feedback-title" hidden>
+          <h4 id="lab-decision-feedback-title" tabindex="-1">Consequências, trade-offs e referências</h4>
+          <ul class="lista-padrao" data-lab-decision-list></ul>
+        </section>
+        <p class="nota-conteudo">
+          Os controles deste exercício são operáveis por teclado. Consulte
+          <a href="https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html"
+            target="_blank" rel="noopener noreferrer"
+            aria-label="WCAG 2.2, critério 2.1.1 Teclado (abre em nova aba)">WCAG 2.2, critério 2.1.1 — Teclado</a>.
+          Esse critério trata da operação por teclado; não é uma heurística de Nielsen.
+        </p>
+
+        <div class="acoes-laboratorio">
+          <button type="button" class="botao-secundario" data-lab-previous>Voltar ao diagnóstico</button>
+          <button type="button" class="botao-acao" data-lab-next disabled>Testar a interface de referência</button>
+        </div>
+      </section>
+
+      <section class="caixa-bloco etapa-laboratorio" data-lab-phase="formulario"
+        aria-labelledby="lab-titulo-formulario" hidden>
+        <p class="selo-conteudo">Fase 4 — Nova interface</p>
+        <h3 id="lab-titulo-formulario" data-lab-heading tabindex="-1">Revise sua solicitação</h3>
+        <p>
+          Teste uma implementação funcional de referência, com dados fictícios apenas nesta
+          página. Ela demonstra um caminho possível; compare-a à proposta configurada na
+          fase anterior. Use uma justificativa demonstrativa, sem dados pessoais. Campos
+          com * são obrigatórios; o anexo é opcional e não será enviado.
+        </p>
+
+        <form class="formulario-laboratorio" data-lab-improved-form novalidate>
+          <div class="erro-resumo-laboratorio" data-lab-form-errors role="region"
+            aria-labelledby="lab-erros-titulo" tabindex="-1" hidden>
+            <h4 id="lab-erros-titulo">Revise os campos indicados</h4>
+            <ul class="lista-padrao" data-lab-form-error-list></ul>
+          </div>
+
+          <div class="campo-laboratorio">
+            <label for="lab-disciplina">Disciplina simulada <span aria-hidden="true">*</span></label>
+            <select id="lab-disciplina" name="disciplina" required
+              aria-describedby="lab-disciplina-ajuda lab-disciplina-erro">
+              <option value="">Selecione uma opção</option>
+              <option value="disciplina-a">Disciplina simulada A</option>
+              <option value="disciplina-b">Disciplina simulada B</option>
+            </select>
+            <small id="lab-disciplina-ajuda">Opções fictícias para esta demonstração.</small>
+            <small class="erro-campo-laboratorio" id="lab-disciplina-erro"></small>
+          </div>
+
+          <div class="campo-laboratorio">
+            <label for="lab-avaliacao">Avaliação <span aria-hidden="true">*</span></label>
+            <select id="lab-avaliacao" name="avaliacao" required
+              aria-describedby="lab-avaliacao-ajuda lab-avaliacao-erro">
+              <option value="">Selecione uma opção</option>
+              <option value="avaliacao-1">Avaliação simulada 1</option>
+              <option value="avaliacao-2">Avaliação simulada 2</option>
+            </select>
+            <small id="lab-avaliacao-ajuda">Escolha uma avaliação de exemplo.</small>
+            <small class="erro-campo-laboratorio" id="lab-avaliacao-erro"></small>
+          </div>
+
+          <div class="campo-laboratorio">
+            <label for="lab-justificativa">Justificativa demonstrativa <span aria-hidden="true">*</span></label>
+            <textarea id="lab-justificativa" name="justificativa" rows="5" maxlength="500" required
+              aria-describedby="lab-justificativa-ajuda lab-justificativa-contagem lab-justificativa-erro"></textarea>
+            <small id="lab-justificativa-ajuda">Use um motivo fictício; não informe dados pessoais. Limite: 500 caracteres.</small>
+            <small><span id="lab-justificativa-contagem" data-lab-justification-count aria-live="off">500 caracteres restantes.</span></small>
+            <span class="texto-acessivel" data-lab-justification-count-announcement
+              aria-live="polite" aria-atomic="true"></span>
+            <small class="erro-campo-laboratorio" id="lab-justificativa-erro"></small>
+          </div>
+
+          <div class="campo-laboratorio">
+            <label for="lab-anexo">Anexo demonstrativo (opcional)</label>
+            <input id="lab-anexo" name="anexo" type="file" accept=".pdf,.png,.jpg,.jpeg"
+              aria-describedby="lab-anexo-ajuda lab-anexo-erro">
+            <small id="lab-anexo-ajuda">
+              A verificação desta demonstração considera apenas a extensão PDF, PNG ou JPG;
+              não verifica o conteúdo do arquivo. Nada será enviado.
+            </small>
+            <small class="erro-campo-laboratorio" id="lab-anexo-erro"></small>
+          </div>
+
+          <button type="button" class="botao-acao" data-lab-review-form>
+            Revisar solicitação
+          </button>
+        </form>
+
+        <section class="revisao-laboratorio" data-lab-review aria-labelledby="lab-revisao-titulo" hidden>
+          <h4 id="lab-revisao-titulo" tabindex="-1">Confira antes de confirmar</h4>
+          <dl>
+            <div><dt>Disciplina</dt><dd data-lab-review-course></dd></div>
+            <div><dt>Avaliação</dt><dd data-lab-review-assessment></dd></div>
+            <div><dt>Justificativa</dt><dd data-lab-review-justification></dd></div>
+            <div><dt>Anexo</dt><dd data-lab-review-file></dd></div>
+          </dl>
+          <p class="nota-conteudo">Esta revisão é local; nenhum dado será enviado ou armazenado.</p>
+          <div class="acoes-laboratorio">
+            <button type="button" class="botao-secundario" data-lab-edit>Voltar e editar</button>
+            <button type="button" class="botao-acao" data-lab-confirm>Confirmar envio simulado</button>
+          </div>
+        </section>
+
+        <button type="button" class="botao-secundario" data-lab-previous>Voltar às decisões</button>
+      </section>
+
+      <section class="caixa-bloco etapa-laboratorio" data-lab-phase="resultado"
+        aria-labelledby="lab-titulo-resultado" hidden>
+        <p class="selo-conteudo">Fase 5 — Resultado</p>
+        <h3 id="lab-titulo-resultado" data-lab-heading tabindex="-1">Seu percurso na simulação</h3>
+        <p data-lab-result-summary></p>
+        <div class="grade-pratica">
+          <div class="caixa-destaque">
+            <h4>Problemas identificados com evidência</h4>
+            <ul class="lista-padrao" data-lab-result-identified></ul>
+          </div>
+          <div class="nota-conteudo">
+            <h4>Pontos para reconsiderar</h4>
+            <ul class="lista-padrao" data-lab-result-review></ul>
+          </div>
+        </div>
+        <div class="caixa-destaque">
+          <h4>Características coerentes reconhecidas</h4>
+          <ul class="lista-padrao" data-lab-result-valid></ul>
+        </div>
+        <div class="caixa-destaque">
+          <h4>Melhorias e trade-offs das decisões</h4>
+          <ul class="lista-padrao" data-lab-result-decisions></ul>
+        </div>
+        <div class="nota-conteudo">
+          <h4>Interpretação registrada nesta página</h4>
+          <p data-lab-result-rationale></p>
+        </div>
+        <p>
+          Este retorno é formativo: organiza as evidências e consequências desta tentativa.
+          Não é uma nota nem mede aprendizagem real; não houve estudo com participantes.
+        </p>
+        <button type="button" class="botao-acao" data-lab-restart>Reiniciar o Laboratório</button>
+      </section>
+    </section>
     </main>
+
+    <footer class="rodape-projeto">
+      <p>Projeto acadêmico desenvolvido por Igor Fernandes e Júlia Moreira, estudantes de Sistemas de Informação da ISULPAR.</p>
+    </footer>
   </div>
 </body>
 </html>

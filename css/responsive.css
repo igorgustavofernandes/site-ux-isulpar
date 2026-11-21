@@ -14,6 +14,14 @@
   .secao-aba {
     padding-block: var(--space-4);
   }
+
+  .progresso-laboratorio {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .grade-comparacao {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 480px) {
@@ -50,6 +58,15 @@
 
   .grade-pratica {
     grid-template-columns: 1fr;
+  }
+
+  .botao-acao,
+  .botao-secundario {
+    width: 100%;
+  }
+
+  .acoes-laboratorio {
+    align-items: stretch;
   }
 }
 

@@ -15,6 +15,7 @@ export function initNavigation() {
   }
 
   const tabs = Array.from(tabList.querySelectorAll('[role="tab"]'));
+  const main = tabList.closest("main");
 
   function updateSkipLink(selectedTab) {
     if (skipLink) {
@@ -69,6 +70,23 @@ export function initNavigation() {
       activateTab(tab);
     }
   });
+
+  if (main) {
+    main.addEventListener("click", (event) => {
+      const trigger = event.target.closest("[data-tab-target]");
+
+      if (!trigger || !main.contains(trigger)) {
+        return;
+      }
+
+      const targetTab = document.getElementById(trigger.dataset.tabTarget);
+
+      if (targetTab && tabs.includes(targetTab)) {
+        activateTab(targetTab);
+        targetTab.focus();
+      }
+    });
+  }
 
   tabList.addEventListener("keydown", (event) => {
     const currentIndex = tabs.indexOf(event.target);
