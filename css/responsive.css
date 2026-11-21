@@ -1,0 +1,84 @@
+@media (max-width: 760px) {
+  body {
+    padding: var(--space-3);
+  }
+
+  .pagina {
+    margin-block: var(--space-3);
+  }
+
+  .conteudo {
+    padding: var(--space-5);
+  }
+
+  .secao-aba {
+    padding-block: var(--space-4);
+  }
+
+  .progresso-laboratorio {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .grade-comparacao {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: var(--space-2);
+  }
+
+  .pagina {
+    margin-block: var(--space-2);
+  }
+
+  .cabecalho-disciplina {
+    margin-block: var(--space-2) var(--space-3);
+    padding: var(--space-5);
+    border-radius: var(--radius-md);
+  }
+
+  .cabecalho-disciplina h1 {
+    font-size: 1.9rem;
+  }
+
+  .conteudo {
+    padding: var(--space-4);
+    border-radius: var(--radius-md);
+  }
+
+  .menu-abas {
+    margin-inline: calc(-1 * var(--space-2));
+  }
+
+  .botao-aba {
+    padding-inline: var(--space-3);
+  }
+
+  .grade-pratica {
+    grid-template-columns: 1fr;
+  }
+
+  .botao-acao,
+  .botao-secundario {
+    width: 100%;
+  }
+
+  .acoes-laboratorio {
+    align-items: stretch;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
